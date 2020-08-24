@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset='utf8'>
+	<meta name='viewport' content='width=device-width'>
+
+	<title>Auto Konnect</title>
+
+	<link rel='icon' type='image/png' href='/favicon.ico'>
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='stylesheet' href='/bundle.css'>
+
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script defer src="/scripts/moment.js"></script>
+	<script defer src='/bundle.js'></script>
+
+	<link rel="manifest" href="/manifest.json"/>
+	<link rel="apple-touch-icon" href="/images/LOGO.png"/>
+    <link href="/images/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/images/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/images/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/images/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/images/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="theme-color" content="#303030">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+
+<body style="background-color:#f7f7f9;">
+	<script src="/scripts/jquery.js"></script>
+	<script src="/scripts/popper.js"></script>
+	<script src="/scripts/bootstrap.js"></script>
+	
+	<script>
+		if('serviceWorker' in navigator) {
+			try {
+				navigator.serviceWorker.register('./sw.js');
+			} catch (err) {
+				console.log('SW registration failed', err.message);
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "Auto Konnect",
+  "short_name": "Auto Knct",
+  "description": "Car Auctions",
+  "background_color": "#303030",
+  "theme_color": "#303030",
+  "icons": [
+    {
+      "src": "/images/LOGO-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/LOGO-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/LOGO.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "."
+}

@@ -1,0 +1,17 @@
+{
+  "name": "python3",
+  "version": "0.1.0",
+  "dependencies": {
+    "serverless": "^1.70.0"
+  },
+  "devDependencies": {
+    "serverless-python-requirements": "^5.1.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

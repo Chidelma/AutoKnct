@@ -1,0 +1,7 @@
+{
+  "appId": "com.autoknct.app",
+  "appName": "Auto Knct",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "public"
+}

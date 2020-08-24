@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "site": "autoknct",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/src/**",
+      "**/node_modules/**",
+      "**/android/**",
+      "**/ios/**",
+      "capacitor.config.json",
+      "**/*.@(jpg|svelte)"
+    ]
+  }
+}

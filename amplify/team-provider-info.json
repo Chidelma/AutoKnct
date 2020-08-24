@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "autoknct-dev-20191113013342-authRole",
+            "UnauthRoleArn": "arn:aws:iam::293020944449:role/autoknct-dev-20191113013342-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::293020944449:role/autoknct-dev-20191113013342-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "autoknct-dev-20191113013342-deployment",
+            "UnauthRoleName": "autoknct-dev-20191113013342-unauthRole",
+            "StackName": "autoknct-dev-20191113013342",
+            "StackId": "arn:aws:cloudformation:us-east-1:293020944449:stack/autoknct-dev-20191113013342/eb3d5170-05e7-11ea-bd5f-0ac97ebd7097"
+        },
+        "categories": {
+            "auth": {
+                "autoknct7f743c73": {}
+            }
+        }
+    }
+}

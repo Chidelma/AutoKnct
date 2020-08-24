@@ -1,0 +1,17 @@
+{
+    "projectName": "NODEJS",
+    "version": "2.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "none",
+        "config": {
+            "SourceDir": ".",
+            "DistributionDir": ".",
+            "BuildCommand": "npm run-script build",
+            "StartCommand": "npm run-script start"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}
