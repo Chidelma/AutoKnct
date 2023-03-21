@@ -1,69 +1,36 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# AutoKnct
 
----
+This is a web application designed to predict vehicle prices for upcoming auctions by aggregating past sales data. The application is built using Svelte for the frontend, Python in AWS Lambda with API Gateway for the backend, MongoDB for the database, and AWS Cognito for authentication.
 
-# svelte app
+Prerequisites
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+* Node.js
+* Svelte
+* AWS Account
+* AWS CLI
+* AWS Cognito User Pool and App Client
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+## Installation
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+* Clone the repository to your local machine.
+* Navigate to the root directory of the project and run npm install to install the necessary dependencies for the Svelte frontend.
+* Ensure that you have a MongoDB instance set up and running. You will need to have the connection string handy.
+* Set up the AWS Lambda functions using Python. You will need to set up an API Gateway to route requests to the appropriate function.
+* Set up an AWS Cognito User Pool and App Client for authentication.
+* Start the Svelte frontend using the command npm run dev.
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+## Usage
 
+* Users can sign up and log in to the application using their email and password.
+* Once logged in, users can view past sales data for vehicles.
+* Users can select a vehicle from the list of past sales and view its details.
+* Users can also enter the details of a vehicle they are interested in selling and get a predicted price based on the past sales data.
+* Users can also view upcoming auctions and predicted prices for vehicles in those auctions.
 
-## Get started
+## Contributing
 
-Install the dependencies...
+If you wish to contribute to this project, please fork the repository and create a pull request. Ensure that any changes made to the code are well-documented and include tests.
 
-```bash
-cd svelte-app
-npm install
-```
+## License
 
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
+This project is licensed under the MIT License.
